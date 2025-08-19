@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Keshari - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                 <div class="logo"><strong>SHIVAM KESHARI</strong></div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <!-- Add this inside your nav .container, after the logo -->
+<div class="theme-toggle">
+    <button id="theme-toggle-btn" class="theme-btn">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun" style="display: none;"></i>
+    </button>
+</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-pic-container">
+                        <img src="profile.png" alt="Shivam Keshari" id="profile-pic">
+                    </div>
+                    <div class="hero-text">
+                        <h1>SHIVAM KESHARI</h1>
+                        <h2>Full-Stack Web Developer</h2>
+                        <p>Passionate about creating innovative digital solutions and continuously learning new technologies to build impactful web applications.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn">Get in Touch</a>
+                            <a href="#resume" class="btn btn-outline">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A Computer Science Engineering student with a solid foundation in C++, Java, and web development technologies (HTML, CSS, JavaScript, PHP, SQL). Currently upskilling in MongoDB and React to expand into full-stack development. I enjoy building user-friendly applications and have hands-on experience developing academic and project-based web solutions.</p>
+                        <div class="current-status">
+                            <p><strong>Current Status:</strong> Looking for internship in 2026</p>
+                        </div>
+                        
+
+<!-- Add this inside your About section, after the current-status div -->
+<div class="languages-section">
+    <h4>Languages</h4>
+    <div class="language-table">
+        <div class="language-row">
+            <span class="language-name">English</span>
+            <span class="language-proficiency">Professional </span>
+        </div>
+        <div class="language-row">
+            <span class="language-name">Hindi</span>
+            <span class="language-proficiency">Native</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">NGO Internship</span>
+                        </div>
+                    </div>
+                      
+                </div>
+                  
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section" id="resume">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download my complete resume or view my experience below</p>
+                
+                <div class="resume-download">
+                    <a href="registration.pdf." download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download PDF Resume
+                    </a>
+                </div>
+
+                <div class="resume-content">
+                    <div class="resume-column">
+                        <h3>Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Technology in Computer Science</h4>
+                            <h5>Lovely Professional University, Jaipur</h5>
+                            <p class="date">2023 - Present</p>
+                            <p>Currently pursuing my degree with focus on Software Engineering and Web Development.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Class 12th</h4>
+                            <h5>Kendriya Vidyalaya AFS Begumpet, Hyderabad</h5>
+                            <p class="date">2023</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Class 10th</h4>
+                            <h5>Kendriya Vidyalaya AFS Begumpet, Hyderabad</h5>
+                            <p class="date">2021</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-column">
+                        <h3>Experience</h3>
+                        <div class="resume-item">
+                            <h4>Intern</h4>
+                            <h5>Naya Sawera NGO</h5>
+                            <p class="date">Summer 2024</p>
+                            <ul>
+                                <li>Contributed to social work initiatives</li>
+                                <li>Assisted in organizing community programs</li>
+                                <li>Gained practical experience in teamwork and leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and side projects</p>
+                
+                <div class="projects-grid" id="projects-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="startupeco.png" alt="Ecosystem Tracker">
+                        </div>
+                        <div class="project-content">
+                            <h3>Ecosystem Tracker Website</h3>
+                            <p>A dynamic website to monitor local biodiversity with real-time data logging.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                            <a href="https://github.com/SHIVAMKESHARI23/Startups-Ecosystem-Tracker-" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="petcare.png" alt="Pet Care Assistance">
+                        </div>
+                        <div class="project-content">
+                            <h3>Pet Care Assistance</h3>
+                            <p>An application to help pet owners manage their pets' health and schedules.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PYTHON</span>
+                                <span>PHP</span>
+                            </div>
+                            <a href="https://github.com/SHIVAMKESHARI23/PET-CARE-ASSISTANT/tree/main/CseProj" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="cpu schedule.png" alt="CPU Scheduler">
+                        </div>
+                        <div class="project-content">
+                            <h3>Intelligent CPU Scheduler Simulator</h3>
+                            <p>Simulated CPU scheduling algorithms (FCFS, Round Robin) with performance analysis.</p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="https://github.com/SHIVAMKESHARI23/Intelligent-CPU-Scheduler" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="namaniganga.png" alt="bhagirathi-namamiganga">
+                        </div>
+                        <div class="project-content">
+                            <h3>Bhagirathi-namamiganga</h3>
+                            <p>This rovides real-time and simulated insights into Ganga River water quality, weather trends, industrial discharge, and satellite-based indicators.</p>
+                            <div class="project-tech">
+                                <span>PYTHON</span>
+                            </div>
+                            <a href="https://github.com/SHIVAMKESHARI23/BHAGIRATHI" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="supermart.png" alt="">
+                        </div>
+                        <div class="project-content">
+                            <h3>SUPERMART</h3>
+                            <p>A GENERAL ONLINE SUPERMART.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="https://github.com/SHIVAMKESHARI23/SUPERMART" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+
+                        
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">My technical expertise and currently learning technologies</p>
+                
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>85%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="85" disabled>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>60%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="60" disabled>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>70%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="70" disabled>
+                        </div>
+                    </div>
+
+                    <div class="skills-column">
+                        <h3>Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="95" disabled>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>65%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="65" disabled>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="80" disabled>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="skills-column">
+                        <h3>Backend</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>30%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="30" disabled>
+                        </div>
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>70%</span>
+                            </div>
+                            <input type="range" class="skill-bar" min="0" max="100" value="70" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  <!-- Achievements Section -->
+        <section class="section" id="achievements">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                
+                <div class="achievements-container">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Academic Excellence</h3>
+                            <p>1st Position in Programming Quiz</p>
+
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Hackathon Participant</h3>
+                            <p>Secured a Top 10 position among 50 teams in Hackathon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:shivamkeshar2327@gmail.com">shivamkeshar2327@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919347804434">+91 9347804434</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Jaipur, India</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/shivam-keshari-092530294/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/SHIVAMKESHARI23" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/shivamkeshari2006" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <div class="fixed-bottom-social-links">
+        <a href="https://github.com/SHIVAMKESHARI23" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shivam-keshari-092530294/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/shivamkeshari2006" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:shivamkeshar2327@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
