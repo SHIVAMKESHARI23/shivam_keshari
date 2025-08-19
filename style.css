@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: #2563eb;
     --secondary-color: #1e40af;
@@ -1112,7 +1112,6 @@ footer .container {
     transform: translateY(-3px);
 }
 
-/* Adjust main content padding to account for fixed footer */
 main {
     padding-bottom: 80px;
 }
@@ -1438,4 +1437,429 @@ nav ul li a,
 
 [data-theme="dark"] .hero {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(30, 64, 175, 0.15) 100%);
+}
+/* Mobile First Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-content {
+        gap: 40px;
+    }
+    
+    .profile-pic-container {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 25px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .profile-pic-container {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    /* Navigation */
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-primary);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    
+    nav ul.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .theme-toggle {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* General */
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Hero */
+    .profile-pic-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Resume */
+    .resume-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    /* Certifications */
+    .certifications-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* Achievements */
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievement-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .achievement-icon {
+        margin: 0 auto;
+    }
+    
+    /* Fixed Social Links */
+    .fixed-bottom-social-links {
+        bottom: 20px;
+        padding: 12px 25px;
+        gap: 20px;
+    }
+    
+    .fixed-bottom-social-links a {
+        font-size: 1.3rem;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Navigation */
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .theme-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 90px 0 50px;
+    }
+    
+    .profile-pic-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* About */
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-item {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Resume */
+    .resume-download .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Projects */
+    .project-tech {
+        justify-content: center;
+    }
+    
+    .project-content .btn {
+        width: 100%;
+    }
+    
+    /* Certifications */
+    .certification-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .certification-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Contact Form */
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Fixed Social Links */
+    .fixed-bottom-social-links {
+        bottom: 15px;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+    
+    .fixed-bottom-social-links a {
+        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .fixed-bottom-social-links a::after {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    .btn, .theme-btn, .menu-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .fixed-bottom-social-links a {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    /* Increase tap targets */
+    nav ul li a {
+        padding: 15px 0;
+        display: block;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #000000;
+    }
+    
+    [data-theme="dark"] {
+        --border-color: #ffffff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .menu-btn span {
+        transition: none;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 0 40px;
+    }
+    
+    .profile-pic-container {
+        width: 200px;
+        height: 200px;
+    }
+}/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Show mobile menu toggle on smaller screens */
+@media (max-width: 992px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    nav .container {
+        flex-wrap: wrap;
+    }
+}
+
+
+nav {
+    z-index: 1000;
+}
+
+.mobile-menu-toggle {
+    z-index: 1001;
 }
