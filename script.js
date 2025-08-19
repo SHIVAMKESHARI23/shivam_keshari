@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-// Add this to your existing JavaScript
+
 document.addEventListener('DOMContentLoaded', function() {
     // Theme toggle functionality
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
@@ -100,5 +100,61 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Your existing JavaScript code continues here...
+ 
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+    
+    // Close menu when clicking on links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenuBtn.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('nav') && navMenu.classList.contains('active')) {
+            mobileMenuBtn.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+    });
+    
+    // Prevent body scroll when menu is open
+    const originalStyle = document.body.style.overflow;
+    
+    function toggleBodyScroll(enable) {
+        if (enable) {
+            document.body.style.overflow = originalStyle;
+        } else {
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    
+    // Observe menu state changes
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'class') {
+                const isMenuOpen = navMenu.classList.contains('active');
+                toggleBodyScroll(!isMenuOpen);
+            }
+        });
+    });
+    
+    observer.observe(navMenu, { attributes: true });
+  
+    
 });
